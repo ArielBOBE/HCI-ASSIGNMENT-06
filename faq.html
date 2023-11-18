@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // all answers hidden
+            $(".answer").hide(function(){
+            });
+
+            // answer1 toggle
+            $("#q1-b").click(function(){
+                $("#answer1").animate({height: 'toggle'});
+            });
+
+            // answer2 toggle
+            $("#q2-b").click(function(){
+                $("#answer2").animate({height: 'toggle'});
+            });
+
+            // answer3 toggle
+            $("#q3-b").click(function(){
+                $("#answer3").animate({height: 'toggle'});
+            });
+
+            // answer4 toggle
+            $("#q4-b").click(function(){
+                $("#answer4").animate({height: 'toggle'});
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>FAQ</h1>
+    <figcaption>Frequenty Asked Questions on how to Bob</figcaption>
+
+    <ul>
+        <li id="question1" class="question"><label>How to get good at Bob1?</label><button id="q1-b">▼</button></li>
+        <li class="answer" id="answer1">Bob1 is a very difficult course in Bob International School. It is recommended to take the prerequisite course 'Bob-Start' to strengthen your foundations in 'Bob'. </li>
+        <li id="question2" class="question">How to take a leave of absence?<button id="q2-b">▼</button></li>
+        <li class="answer" id="answer2">To take a leave of absence, first go to the Bob Support Office (BSO) and talk the the staff over there. Then beg to them saying you need to take a leave of absence (note that begging has a 30% chance of succeeding).</li>
+        <li id="question3" class="question">Why can't I take the Bob Exams?<button id="q3-b">▼</button></li>
+        <li class="answer" id="answer3">If you are unable to take the Bob Exams, then that means your attendence for that particular Bob course is lower than 80%. To take the Bob Finals for any particular course your attendence for that course must be at least 80%</li>
+        <li id="question4" class="question">How to eat Bob?<button id="q4-b">▼</button></li>
+        <li class="answer" id="answer4">B̸̢̘̟̖̤̗̲̉͑̐O̴̞̺̎̏͊̒̀̄͊̕B̵̤̜̥͕̣͓̬̆̈̓̈͌͒̌̇̑̿͂B̴͇͎̋̂̾͑̓̅̏̈͌̇̿̈́́̀̋O̵̻̅̆̇͒͛̒͠B̶̡̛̺͕̑̊̆͆̅͆B̸̩̔̎͋̉̌̇̆̽̏̔͊̏̃̏͘O̴̡͍̫̯̹̫̙̤̔̑͗͝B̸̹̖͕̗̣̫̀́̑̍́Ḃ̵̜̺̅̍̀̏O̷̡̺͓̤̥̘̯̊̚͜B̴̧̛͔͍̓̀͆͛́̕͘B̴̡͈̘͎͛͂̃̆̆̈͜Ǫ̵͈̟͔̮̭̆́́̽̿̌̓͒̈̈̏̚͝B̴̡̝͐̀B̶̧̫̳͔̱̬̃̏͊̈́͂̅̓͐͑̂͘͝͝Ō̴̜̞͔̈́̀͒͌̀̍͋B̵͕̖̜̠̣͊̈́͒̒͌B̴͉̳͙͇̗͈̠̣̹̮͙̜͖̙͈̓O̶̧̧̧͔̮̭̺̮̥̣̭͚̲͊̿̑̆͑̌̈́͛̉̎́͗̄͝͠B̷̧̨͇̗̋̇́̋͑́̚͝B̴̻̫̪̼͙̳̥̮͇̻͙̺͍̥̐͐̓̈́̈̄́̈́̈́̄͝͠͝Ǫ̷̳̳̯̖͑̂̊̑̈́B̸̡̙̭͎͈̟̠̓̈́̽̈̂̌̏̃̊̉B̶͍͓̲̎͛̈́̒̈́͑͗̏̀͆̎̿̐̃Ŏ̷̧̟̞̫͚̪̜͈́̽̚Ḇ̶̜̪̹̇B̶̢̦̥̩̤̞̖̠͓͇̮͎̔̏̂̒͘̚͜͠͠ͅŎ̷̡͖̲̖̻̻̳̜̟̭̞̇̓̄̋̈̄͛̈́͜B̷̡̧̻̣͕̻̲͓̺̪̃̊̾͠B̸̛̯̱͍̜̻̯̙̝̯̤̈̾́͗͒͂͆́̔͝ͅÖ̸̯̮́̀̈́̌̄B̷̪̳͈̞͕͕̓́̈́͋͂̚ͅB̴̙͓̠̍̒͗́̋͌̊̕͝͠Ö̶̘̙̦́̆̽̓̍͑̂͌͛̀̕Ḃ̷̠̺̜̩̠̯̼͛̒̊̍͗B̶̧̞̭̜̟̻͇̭̟̟̲̏̃̍́̉̃́̚Ō̶͙̰̥͎̠͕̳̺̠̹̜̾̊͜͠B̵̧͔̟͉̲͎͉̫͙̝̂̌͒̃̽̏̀͛̓͌̓̏͠͠B̵̛̺͙̠̯̣͔̞̳͍̙͚̌͗̔̍͒̃̐̔͐͗́̑Ö̵̤̤͛̊̔͝Ḇ̷͓͊͊̑̈́̂̈́͐͒̕B̶̟͚̟̞̗͓͚̤̜͙̤͉̅͐̃̀̏͛̏̏̉̎̎̍̿͝Ö̶̥̬̳̠̙̬͍̫̘́͒̆͌̈́͜͝͠͠B̷̧͓̠̬͋̿̓͂̀͊̚̕͜͜</li>
+    </ul>
+</body>
+</html>

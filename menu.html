@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".image1").hide(function(){
+            });
+            $(".image2").hide(function(){
+            });
+            $(".image3").hide(function(){
+            });
+            $(".image4").hide(function(){
+            });
+            $(".image5").hide(function(){
+            });
+
+            // Preview for Classic Borgir
+            $(".borgir").hover(function(){
+                $(".image1").animate({height:'show'});
+            }, function(){
+                $(".image1").animate({height:'hide'});
+            });
+
+
+            // Preview for fries
+            $(".fries").hover(function(){
+                $(".image2").animate({height:'show'});
+            }, function(){
+                $(".image2").animate({height:'hide'});
+            });
+
+
+            // Preview for bambang
+            $(".bambang").hover(function(){
+                $(".image3").animate({height:'show'});
+            }, function(){
+                $(".image3").animate({height:'hide'});
+            });
+
+
+            // Preview for water
+            $(".water").hover(function(){
+                $(".image4").animate({height:'show'});
+            }, function(){
+                $(".image4").animate({height:'hide'});
+            });
+
+
+            // Preview for premium water
+            $(".water2").hover(function(){
+                $(".image5").animate({height:'show'});
+            }, function(){
+                $(".image5").animate({height:'hide'});
+            });
+
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bambang Burger</h1>
+    </div>
+    <h2>Foods:</h2><hr class="hr50">
+        <div class="column">
+            <ul>
+                <li class="food1">Clasic Borgir <button class="borgir">▼</button></li>
+                    <img src="https://i.ytimg.com/vi/r44zRMxfgG4/maxresdefault.jpg" class="image1" class="image">
+                    <figcaption class="image1"><b>Classic Borgir (Rp. 100.000):</b>
+                        <br>Packed with 10mg of cheddar cheese, 
+                        <br>10g of beef and 200g of buns.
+                        <hr>
+                    </figcaption>
+                <li class="food2">Classic Fries <button class="fries">▼</button></li>
+                    <img src="https://cdn.discordapp.com/attachments/295949605386846208/1175023400754888786/image.png?ex=6569b8d1&is=655743d1&hm=855db903065c6f0a4a3dcf05d2f1c78225c5dfb0a1daf3089bc3f67891affedd&" class="image2" class="image">
+                    <figcaption class="image2"><b>Classic Bambang Fries (Rp. 80.000) :</b>
+                        <br>Contains 20 fries. Each of which are pretty long.
+                        <hr>
+                    </figcaption>
+                <li class="food3">Bambang Special <button class="bambang">▼</button></li>
+                    <img src="https://vegconomist.com/wp-content/uploads/sites/3/Very-Good-Food-2-e1650508941954.png" class="image3" class="image">
+                    <figcaption class="image3"><b>The Greatest Bambang Burger (Rp. 500.000):</b>
+                        <br>Packed with 15mg of cheddar cheese, 
+                        <br>15g of beef and 400g of buns.
+                    </figcaption>
+            </ul>
+        </div>
+    <h2>Drinks:</h2><hr class="hr50">
+        <div class="column">
+            <ul>
+                <li class="drink1">Classic Water <button class="water">▼</button></li>
+                    <img src="https://arti-assets.sgp1.digitaloceanspaces.com/renyswalayanku/products/b4bc9393-9a05-4410-b3e1-b84fc3e4b6d4.jpg" class="image4" class="image">
+                    <figcaption class="image4"><b>Classic Water (Rp. 30.000):</b>
+                        <br>Water harvested from the Mt. Pinus
+                    </figcaption>
+                <li class="drink2">Bambang Water Premium <button class="water2">▼</button></li>
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3da7bb40688295.5788df8610b6a.jpg" class="image5" class="image">
+                    <figcaption class="image5"><b>Bambang Water Premium (Rp. 300.000):</b>
+                        <br>Harvested from the tears of our customers
+                    </figcaption>
+            </ul>
+        </div>
+</body>
+</html>

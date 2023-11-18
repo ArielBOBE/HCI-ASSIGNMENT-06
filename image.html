@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.js"></script>
+    <link rel="stylesheet" href="image.css">
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".test").hide()
+            $(".male").change(function(){
+                // $('.man').val($(this)).is(':checked');
+                $('.man').show();
+                $('.woman').hide();
+                $('.children').hide()
+                // if (!$('.woman').is(':checked')){
+                // $(".woman").hide()
+                // };
+            });
+            $(".female").change(function(){
+                $('.woman').show();
+                $('.man').hide();
+                $('.children').hide();
+            });
+            $(".kids").change(function(){
+                $('.woman').hide();
+                $('.man').hide();
+                $('.children').show();
+            });
+            $(".all").change(function(){
+                $(".test").show()
+            });
+            // $(".male").click(function(){
+            //     if ($('.man').is(':checked')) {
+            //         $('.woman').show();
+            //     }
+            //     else ($('.man').show());
+            // });
+            // $(".male").click(function(){
+            //     $(".woman").show();
+            //     $(".children").show();
+            // });
+        });
+
+    </script>
+</head>
+<body>
+    <h1>Image Filterer</h1>
+    <input type="radio" class="all" name="gender">
+    <label>All</label>
+
+    <input type="radio" class="male" name="gender">
+    <label>Male</label>
+
+    <input type="radio" class="female" name="gender">
+    <label>Female</label>
+
+    <input type="radio" class="kids" name="gender">
+    <label>Children</label>
+
+    <div class="container">
+        <img src="https://www.theladders.com/wp-content/uploads/man_outside_091318.jpg" class="man test">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Woman_at_Lover%27s_Bridge_Tanjung_Sepat_%28cropped%29.jpg" class="woman test">
+        <img src="https://www.askinclinic.co.uk/wp-content/uploads/2020/02/Beautiful-Woman-11-scaled.jpg" class="woman test">
+        <img src="https://img.freepik.com/free-photo/close-up-handsome-professional-man-cross-arms-chest-looking-confident-camera-smiling-determined-standing-against-white-background_176420-53771.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699142400&semt=ais" class="man test">
+        <img src="https://www.datocms-assets.com/55312/1635467982-hero-images.jpg?ar64=NDoz&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.53&fp-y=0.18&w=1440" class="children test">
+    </div>
+</body>
+</html>
